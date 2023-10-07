@@ -1,12 +1,71 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
     <main class="container py-5">
-        <section class="card card-body">
-            <h1 class="display-1" text-center>Citamedis App</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam autem consequatur eum facere
-            fugiat id iusto mollitia necessitatibus nobis numquam, odio optio perspiciatis quos,
-            soluta tenetur veniam vero voluptas. </p>
+        <!--Carousel-->
+        <section class="container py-5">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'img/c_1.png' %}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/c_2.png' %}"class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/c_3.png' %}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/c_4.png' %}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/c_5.png' %}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/c_6.png' %}" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="container py-5">
+            <div class="container-fluid bg-light py-5 text-center">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-2">1</div>
+                    <div class="col-sm-6 col-md-4 col-lg-2">1</div>
+                    <div class="col-sm-6 col-md-4 col-lg-2">1</div>
+                    <div class="col-sm-6 col-md-4 col-lg-2">1</div>
+                    <div class="col-sm-6 col-md-4 col-lg-2">1</div>
+                    <div class="col-sm-6 col-md-4 col-lg-2">1</div>
+                </div>
+            </div>
+        </section>
+        <sectio>
+            <div class="container py-5">
+                <h2 class="text-center">ACERCA DE</h2>
+                <div class="row">
+                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ullam et distinctio
+                        corporis hic obcaecati recusandae doloribus illo voluptas quia animi in dolorum libero beatae
+                        praesentium a, ex modi voluptatem?</div>
+                    <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sint pariatur sed
+                        harum deserunt maxime excepturi doloremque. Debitis officia itaque aperiam maxime quam
+                        voluptatibus dignissimos quasi? Quaerat error pariatur vel.</div>
+                </div>
+            </div>
+        </sectio>
+        <section class="card card-body container py-5">
+            <h1 class="display-1 text-center" >Citamedis App</h1>
+            <p class="text-center">Bienvenidos</p>
 
             <div class="text-center">
                 <a class="btn btn-primary" href="/signin" >
@@ -17,5 +76,44 @@
                 </a>
             </div>
         </section>
+        <sectio class="container py-5">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static 'img/cards_1.png' %}" class="card-img-top" alt="...">
+                            <div class="card-body ">
+                                <h5 class="card-title">Medico General</h5>
+                                <p class="card-text">Encuentra a nuestros médicos generales altamente capacitados para
+                                    cuidar de tu salud.</p>
+                                <a href="#" class="btn btn-primary">Informate</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static 'img/cards_2.png' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Psicología</h5>
+                                <p class="card-text">Nuestros psicólogos están aquí para ayudarte a enfrentar tus
+                                    desafíos emocionales y psicológicos.</p>
+                                <a href="#" class="btn btn-primary">Informate</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{% static 'img/cards_3.png' %}"class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Psiquiatría</h5>
+                                <p class="card-text">Nuestros psiquiatras especializados te brindarán el apoyo que
+                                    necesitas para tu salud mental.</p>
+                                <a href="#" class="btn btn-primary">Informate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </sectio>
     </main>
 {% endblock %}

@@ -1,0 +1,13 @@
+/* Estilo para el fondo del carousel */
+.carousel-inner {
+    background-color: #f8f9fa; /* Cambia el color de fondo del carousel */
+}
+.carousel-item {
+    max-height: 500px ;
+}
+
+footer p {
+    font-size: 60px;
+    color: #ff0033;
+
+}
